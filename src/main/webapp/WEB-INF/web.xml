@@ -1,0 +1,22 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" version="5.0">
+ 
+  
+<servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.library.RegisterServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+    <servlet-name>BorrowBookServlet</servlet-name>
+    <servlet-class>com.library.BorrowBookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BorrowBookServlet</servlet-name>
+    <url-pattern>/borrowBook</url-pattern>
+  </servlet-mapping>
+</web-app>
